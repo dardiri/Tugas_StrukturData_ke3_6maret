@@ -1,0 +1,56 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main ()
+{
+    struct data
+    {
+        char nama[20];
+        int tugas;
+        int kuis;
+        int mid;
+        int uas;
+        float nilai_akhir;
+    };struct data mahasiswa;
+
+cout<<"|################################################|\n";
+cout<<"|             Tugas Struktur Data                |\n";
+cout<<"|          copyright_dardiri_project             |\n";
+cout<<"| Program Struct Menghitung Nilai Akhir Mahasiswa|\n";
+cout<<"|################################################|\n";
+
+{
+    cout<<"Masukan Nama Mahasiswa : ";
+    cin>>mahasiswa.nama;
+    cout<<"Masukan Nilai Tugas    : ";
+    cin>>mahasiswa.tugas;
+    cout<<"Masukan Nilai Kuis     : ";
+    cin>>mahasiswa.kuis;
+    cout<<"Masukan Nilai UTS      : ";
+    cin>>mahasiswa.mid;
+    cout<<"Masukan Nilai UAS      : ";
+    cin>>mahasiswa.uas;
+    cout<<endl;
+}
+cout<<endl;
+cout<<"------------------------------------------------------------\n";
+cout<<"Nama"<<"\t"<<"Tugas"<<"\t"<<"Kuis"<<"\t"<<"UTS"<<"\t"<<"UAS"<<"\t"<<"Nilai Akhir"<<"\t"<<endl;
+cout<<"------------------------------------------------------------\n";
+{
+    mahasiswa.nilai_akhir=(mahasiswa.tugas*20/100)+(mahasiswa.kuis*20/100)+(mahasiswa.mid*30/100)+(mahasiswa.uas*40/100);
+cout<<mahasiswa.nama<<"\t"<<mahasiswa.tugas<<"\t"<<mahasiswa.kuis<<"\t"<<mahasiswa.mid<<"\t"<<mahasiswa.uas<<"\t"<<mahasiswa.nilai_akhir;
+ mahasiswa.nilai_akhir=(mahasiswa.tugas*20/100)+(mahasiswa.kuis*20/100)+(mahasiswa.mid*30/100)+(mahasiswa.uas*40/100);
+if (mahasiswa.nilai_akhir>=85)
+    cout<<" (A)";
+else if (mahasiswa.nilai_akhir>=70)
+    cout<<" (B)";
+else if (mahasiswa.nilai_akhir>=55)
+    cout<<" (C)";
+else if (mahasiswa.nilai_akhir>=40)
+    cout<<" (D)";
+else if (mahasiswa.nilai_akhir<=40)
+    cout<<" (E)";
+cout<<endl;
+}
+cout<<endl;
+}
